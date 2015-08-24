@@ -1,6 +1,5 @@
 #!/bin/bash
 
-HERE=
 cd $(dirname $0)
 DOTFILES=`ls -A | egrep -e '^\.' | egrep -v '^.git$'`
 
