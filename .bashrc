@@ -9,3 +9,5 @@ if [ -f "${HOME}/.bash_aliases" ]; then
 fi
 
 PATH=$PATH:~/bin
+
+PS1="\[\e[01;33m\]^\[\e[0m\]\[\e[00;37m\]\w\[\e[0m\]\[\e[01;33m\]\$\[\e[0m\] "
