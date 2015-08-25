@@ -13,6 +13,12 @@ Plugin 'hynek/vim-python-pep8-indent'
 call vundle#end()
 filetype plugin indent on
 
+" Mappings
+nnoremap ,, : so ~/.vimrc<CR>
+
+"Options
+syntax on
+hi Comment ctermfg=green
 
 set autoindent
 set laststatus=2
@@ -22,6 +28,6 @@ set number
 set showmatch
 set smartindent
 set vb t_vb=
-syntax on
 
-nnoremap ,, : so ~/.vimrc<CR>
+" Python overrides
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
