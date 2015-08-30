@@ -21,13 +21,14 @@ syntax on
 hi Comment ctermfg=green
 
 set autoindent
+set ruler
 set laststatus=2
 set nohls
 set nojoinspaces
 set number
 set showmatch
-set smartindent
+set cindent
 set vb t_vb=
 
 " Python overrides
-autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+" autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
