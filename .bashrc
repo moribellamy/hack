@@ -8,6 +8,5 @@ if [ -f "${HOME}/.bash_aliases" ]; then
   source "${HOME}/.bash_aliases"
 fi
 
-PATH=$PATH:~/bin
-
-PS1="\[\e[01;33m\]^\[\e[0m\]\[\e[00;37m\]\w\[\e[0m\]\[\e[01;33m\]\$\[\e[0m\] "
+export PATH="$PATH:~/bin:/opt/local/bin:/opt/local/sbin"
+export PS1="\[\e[01;33m\]^\[\e[0m\]\[\e[00;37m\]\w\[\e[0m\]\[\e[01;33m\]\$\[\e[0m\] "
