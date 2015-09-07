@@ -1,3 +1,26 @@
+" Mappings
+nnoremap ,, : so ~/.vimrc<CR>
+
+" Options. First come global options, then Vundle overrides, then per-filetype
+" overrides.
+
+syntax on
+hi Comment ctermfg=green
+
+set autoindent
+set cindent
+set expandtab
+set laststatus=2
+set nocompatible
+set nohls
+set nojoinspaces
+set number
+set ruler
+set shiftwidth=4
+set showmatch
+set tabstop=4
+set vb t_vb=
+
 " Vundle.
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
@@ -13,26 +36,6 @@ Plugin 'hynek/vim-python-pep8-indent'
 call vundle#end()
 filetype plugin indent on
 
-" Mappings
-nnoremap ,, : so ~/.vimrc<CR>
-
-"Options
-syntax on
-hi Comment ctermfg=green
-
-set expandtab
-set tabstop=4
-set shiftwidth=4
-
-set autoindent
-set ruler
-set laststatus=2
-set nohls
-set nojoinspaces
-set number
-set showmatch
-set cindent
-set vb t_vb=
 
 " Python overrides
 " autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
