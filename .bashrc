@@ -9,4 +9,4 @@ if [ -f "${HOME}/.bash_aliases" ]; then
 fi
 
 export PATH="$PATH:~/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin"
-export PS1="\[\e[01;33m\]^\[\e[0m\]\[\e[00;37m\]\w\[\e[0m\]\[\e[01;33m\]\$\[\e[0m\] "
+export PS1="\[\e[01;33m\]^\[\e[0m\]\[\e[00;37m\]\u@\h \w\[\e[0m\]\[\e[01;33m\]\$\[\e[0m\] "
