@@ -1,5 +1,6 @@
 " Mappings
 nnoremap ,, : so ~/.vimrc<CR>
+command CD cd %:p:h
 
 " Options. First come global options, then Vundle overrides, then per-filetype
 " overrides.
